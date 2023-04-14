@@ -46,6 +46,8 @@ const concat = arr.concat([11, 12, 13, 14, 15]);
 //             not the underlying objects. However, if the array contains objects,
 //             the objects are copied by reference, not duplicated. This means that
 //             if a copied object is modified, the change is visible in both the copy and the original.
+//             If the element is not in the array, undefined is returned. 
+//             The time complexity is O(n).
 const slice = arr.slice(0, 5); // [1, 2, 3, 4, 5]
 
 // 15. splice - changes the contents of an array by removing or replacing existing elements 
