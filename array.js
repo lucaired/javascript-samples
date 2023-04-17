@@ -3,7 +3,7 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // 1. forEach
 arr.forEach((item, index) => console.log(item, index));
 // 2. map
-const map = arr.map((item) => item * 2);
+const map = arr.map((item, idx) => item * 2);
 
 // 3. filter
 const filter = arr.filter((item) => item % 2 === 0);
