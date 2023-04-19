@@ -17,3 +17,4 @@ const {value, lastSeen, ttl} = hashMap.get('key1');
 console.log(value, lastSeen, ttl);
 
 console.log(hashMap.get("xyz")) // undefined
+hashMap.delete("key1")
