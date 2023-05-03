@@ -18,3 +18,20 @@ console.log(value, lastSeen, ttl);
 
 console.log(hashMap.get("xyz")) // undefined
 hashMap.delete("key1")
+
+// Iterate over the map
+for (let [key, value] of hashMap) {
+    console.log(key, value);
+}
+// Iterate with Object.entries
+for (let [key, value] of Object.entries(hashMap)) {
+    console.log(key, value);
+}
+
+// Iterate over the keys
+
+hashMap.set({key: 1}, 1);
+hashMap.set({key: 2}, 2);
+hashMap.forEach((value, key) => {
+    console.log(key, value);
+});

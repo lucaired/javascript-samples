@@ -43,7 +43,7 @@ const concat = arr.concat([11, 12, 13, 14, 15]);
 
 // 14. slice - returns a shallow copy of a portion of an array into a new array object
 //             A shallow copy means that it copies only the elements of the array, 
-//             not the underlying objects. However, if the array contains objects,
+//             no  t the underlying objects. However, if the array contains objects,
 //             the objects are copied by reference, not duplicated. This means that
 //             if a copied object is modified, the change is visible in both the copy and the original.
 //             If the element is not in the array, undefined is returned. 
@@ -70,3 +70,6 @@ const unshift = arr.unshift(0); // 21
 
 // 20. sort
 const sort = arr.sort((a, b) => a - b); // [0, 1, 2, 3, 4, 5, 5, 5, 5, 5, 6, 7, 8, 9, 10, 11, 11, 12, 13, 14, 15]
+
+const arr2 = [1, 2, 3, 4, 5];
+arr2.push(6); // [1, 2, 3, 4, 5, 6]
